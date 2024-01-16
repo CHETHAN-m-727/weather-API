@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "module": "CommonJS",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "target": "ES6",
     "sourceMap": true,
-    "outDir": "dist"
+    "module": "CommonJS", // Keep this line, remove the duplicate
+    "outDir": "./dist"
   },
   "include": [
-    "src/**/*",
+    "src/**/*.ts",
     "index.ts",
     "controllers/Testing/Testing.ts",
     "routers/users.ts",
     "druid.js"
-  ]
+  ],
+  "exclude": ["node_modules"]
 }
