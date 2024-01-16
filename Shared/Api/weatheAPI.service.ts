@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from "axios";
-import { API_KEY, BASE_URL } from "../Constant";
+import { API_KEY, BASE_URL } from "../constant";
 
 export const getWeatherAPICall = (cityName: string): Promise<any> => {
   const url = `${BASE_URL}/weather?q=${cityName}&APPID=${API_KEY}`;
