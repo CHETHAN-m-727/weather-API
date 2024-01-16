@@ -1,18 +1,18 @@
 {
   "compilerOptions": {
+    "module": "NodeNext",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "moduleResolution": "nodenext",
     "target": "ES6",
     "sourceMap": true,
-    "module": "CommonJS", // Keep this line, remove the duplicate
-    "outDir": "./dist"
+    "outDir": "dist"
   },
   "include": [
-    "src/**/*.ts",
+    "SRC/**/*",
     "index.ts",
     "controllers/Testing/Testing.ts",
     "routers/users.ts",
     "druid.js"
-  ],
-  "exclude": ["node_modules"]
+  ]
 }
