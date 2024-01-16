@@ -25,12 +25,48 @@
     "application/json"
   ],
   "paths": {
-    "/example/example": {
+    "/Weather": {
       "get": {
         "description": "",
+        "parameters": [
+          {
+            "name": "cityName",
+            "in": "query",
+            "type": "string"
+          }
+        ],
         "responses": {
-          "default": {
-            "description": ""
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/Forecast": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "cityName",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
