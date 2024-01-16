@@ -1,15 +1,14 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "CommonJS",
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "moduleResolution": "nodenext",
     "target": "ES6",
     "sourceMap": true,
     "outDir": "dist"
   },
   "include": [
-    "SRC/**/*",
+    "src/**/*",
     "index.ts",
     "controllers/Testing/Testing.ts",
     "routers/users.ts",

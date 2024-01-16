@@ -1,5 +1,7 @@
 // import './DB/db';
-import express, { Application, Request, Response, NextFunction } from "express";
+const express = require("express");
+import { Application, Request, Response, NextFunction } from "express";
+
 import bodyParser from "body-parser";
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
@@ -7,6 +9,7 @@ import swaggerFile from "./swagger_output.json";
 import { PORT, ENVIRONMENT } from "./Shared/Constant";
 import getWeather from "./Routes/Weather.routes";
 const app: Application = express();
+
 const port = PORT || 3005; // Change this to the desired port number
 const environment = ENVIRONMENT;
 const swaggerfile =
