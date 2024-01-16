@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.ts"
+    "start": "node index.ts",
+    "swagger-autogen": "node swagger.ts"
   },
   "keywords": [],
   "author": "",
