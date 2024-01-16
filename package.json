@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " node index.ts",
-    "build": "tsc",
-    "dev": "nodemon --exec ts-node index.ts",
+ "scripts": {
+    "start": "node index.ts",
+   
     "swagger-autogen": "node swagger.ts"
   },
   "keywords": [],
