@@ -16,7 +16,7 @@ const doc = {
     title: "My API",
     description: "Description",
   },
-  host: "url", // Update with the appropriate hostname and port
+  host: "https://weather-api-t3nv.onrender.com", // Update with the appropriate hostname and port
   schemes: ["https"], // Add both HTTP and HTTPS schemes
   securityDefinitions: {
     BearerAuth: {
