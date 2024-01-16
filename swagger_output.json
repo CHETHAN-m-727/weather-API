@@ -5,7 +5,7 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "https://weather-api-t3nv.onrender.com",
+  "host": "weather-api-t3nv.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
