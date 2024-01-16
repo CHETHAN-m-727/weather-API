@@ -4,6 +4,7 @@ import {
   getWeatherAPICall,
 } from "../Shared/Api/weatheAPI.service";
 import { error } from "console";
+import path from "path";
 
 export const getWeather = async (
   req: Request,
@@ -69,5 +70,17 @@ export const getForecast = async (
   } catch (error) {
     console.error("Error in fetching scheme:", error);
     res.status(500).json({ status: "failed", data: "Internal Server Error" });
+  }
+};
+
+export const readMdFile = async (req, res) => {
+  try {
+    const filePath = path.join(__dirname, "test.md"); // Path to your .md file
+    res.download(filePath); // This sends the file to the client
+  } catch (error) {
+    console.error("Error in fetching file:", error);
+    res
+      .status(500)
+      .json({ status: "failed", message: "Internal Server Error" });
   }
 };
