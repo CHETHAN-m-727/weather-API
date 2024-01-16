@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "target": "ES6",
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "SRC/**/*",
+    "index.ts",
+    "controllers/Testing/Testing.ts",
+    "routers/users.ts",
+    "druid.js"
+  ]
+}
