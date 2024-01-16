@@ -1,5 +1,6 @@
 // import './DB/db';
-import express, { Application, Request, Response, NextFunction } from "express";
+const express = require("express");
+const { Application, Request, Response, NextFunction } = require("express");
 import bodyParser from "body-parser";
 import cors from "cors";
 import swaggerUi from "swagger-ui-express";
